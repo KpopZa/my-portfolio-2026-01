@@ -1,0 +1,191 @@
+body {
+    width: 100%;
+    font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #fbfafa;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1024px;          /* OR 960px / 1440px; */
+    width: 100%;        /* Mobile: full width */
+    margin-inline: auto;        /* Horizontal: center */
+    padding: 0 1rem;
+    box-sizing: border-box;     /* คุมความกว้างที่เมื่อรวม padding แล้วให้ไม่เกิน 1024px (already have in reset.css file) */
+}
+
+.hero {
+    background-color: #e6e0e1;
+    padding: 1.5rem;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 7rem;
+}
+
+.hero header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+p, small {
+    line-height: 1.5;
+    color: #6b5243;
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 span {
+    font-weight: 100;
+}
+
+.cta {
+    padding: 10px 30px;
+    background-color: #d1c3b6;
+    color: #6b5243;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.hero img {
+    border-radius: 2.2rem;
+}
+
+.about, .skills, .projects {
+    padding-top: 5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.about .inner-about {
+    display: grid;
+    grid-template-columns: 250px 500px;
+    gap: 3rem;
+}
+
+.about .about-text, .projects .projects-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;        
+    gap: 1.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.inner-skills {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+}
+
+.skills {
+    padding-right: 4rem;
+}
+
+.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    /* width: 500px; */
+}
+
+.skills ul li {
+    display: inline-flex;          /* ให้กว้างตามเนื้อหา */
+    align-items: center;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    background: #eee;
+}
+
+.skill-text {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+
+.skills .bar {
+    width: 100%;
+    height: 1.2rem;
+    background-color: #e6e0e1;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.skills .bar-fill {
+    height: 100%;
+    background-color: #d1c3b6;
+    border-radius: 2rem;
+    display: block;
+}
+
+.inner-projects {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+}
+
+.contact {
+    background-color: #e6e0e1;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+.contact p {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.contact a {
+    font-weight: bold;
+    color: #6b5243;;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0 0rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer a:link {
+    color: #6b5243;
+}
