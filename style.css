@@ -82,7 +82,7 @@ img {
     gap: 3rem;
 }
 
-.about .about-text, .projects .projects-text {
+.about .about-text, .projects, .projects-text, .inner-contact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;        
@@ -153,8 +153,14 @@ h3 {
 
 .contact {
     background-color: #e6e0e1;
-    padding: 3rem 0;
-    margin-top: 3rem;
+    margin-top: 4.5rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact .inner-contact {
+    align-items: center;
+    justify-content: center;
 }
 
 .contact p {
@@ -163,8 +169,7 @@ h3 {
 }
 
 .contact a {
-    font-weight: bold;
-    color: #6b5243;;
+    padding: 10px 45px;
 }
 
 .footer {
